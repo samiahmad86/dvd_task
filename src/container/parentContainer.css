@@ -1,0 +1,18 @@
+.container {
+    display: contents;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+.child {
+    display: block;
+    width: 50%;
+    color: red;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+

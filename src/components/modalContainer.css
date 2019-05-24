@@ -1,0 +1,8 @@
+.container {
+    display: blocl;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    flex-direction: vertical;
+    flex-wrap: wrap ;
+}
