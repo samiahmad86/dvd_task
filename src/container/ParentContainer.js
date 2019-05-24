@@ -17,7 +17,7 @@ class ParentContainer extends Component {
     }
 
     fetchContents = () => {
-        return fetch(" https://jsonplaceholder.typicode.com/photos")
+        fetch(" https://jsonplaceholder.typicode.com/photos")
         .then(res => res.json())
         .then(res => {
          this.setState({inStore: res})
