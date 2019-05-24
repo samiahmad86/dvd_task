@@ -1,6 +1,7 @@
 .container {
     display: contents;
-    width: 100%;
+    width: 200px;
+    height: 500px;
     align-items: center;
     text-align: center;
     margin: auto;
@@ -10,9 +11,17 @@
 .child {
     display: block;
     width: 50%;
-    color: red;
+    height: 100%;
+    background: red;
+    overflow: scroll;
     align-items: center;
     text-align: center;
     margin: auto;
+    border: 2px solid red;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}

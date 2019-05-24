@@ -19,11 +19,13 @@ class InStore extends Component {
         const content = ((this.props.content.length === 0)? null : 
         this.props.content.slice(0,this.state.slicedKey).map((item) => {
             return (
-                <div id={item.id} key={item.id}>
-                    <p > {item.title}</p>
-                    <img  src={item.thumbnailUrl}></img>
-                    <button  onClick={this.deleteItem.bind(this)} label="delete item"> Delete</button>
-                    <button  onClick={this.updateItem.bind(this)} label="update item"> Update</button>
+                <div  className="grid-container">
+                    <div  id={item.id} key={item.id}>
+                        <p > {item.title}</p>
+                        <img  src={item.thumbnailUrl}></img>
+                        <button  onClick={this.deleteItem.bind(this)} label="delete item"> Delete</button>
+                        <button  onClick={this.updateItem.bind(this)} label="update item"> Update</button>
+                    </div>
                 </div>
             ) 
         }));

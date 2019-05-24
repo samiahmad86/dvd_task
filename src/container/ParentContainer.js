@@ -40,13 +40,19 @@ class ParentContainer extends Component {
     }
   
     render () {
-        const modal = ((this.state.showModal)? <ModaLContainer/> : null)
+        const modal = ((this.state.showModal)? 
+            <ModaLContainer className="sticky"/>
+         : null)
         return (
-            <div className="container">
-                {modal}
-                <RentedOut className="child" content={this.state.rentedOut}/>
-                <InStore content={this.state.inStore} deleteItem={this.deleteItem} updateItem={this.updateItem}/>
-            </div>
+                
+                <div className="container">
+                    {modal}
+                    <div className="container">
+                    < RentedOut  content={this.state.rentedOut}/>
+                    </div>
+
+                    <InStore className="container" content={this.state.inStore} deleteItem={this.deleteItem} updateItem={this.updateItem}/>
+                </div>
         );
     }
 }

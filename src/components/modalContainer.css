@@ -1,5 +1,10 @@
-.container {
-    display: blocl;
+.modalcontainer {
+    display: block;
+    position: sticky;
+    height: 200px;
+    width: 200px;
+    float: left;
+    background-color: blanchedalmond;
     width: 50%;
     align-items: center;
     margin: auto;
